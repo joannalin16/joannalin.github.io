@@ -3,31 +3,37 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main  # Trigger deployment on push to the main branch
+      - main  # Trigger this action when changes are pushed to 'main'
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v2
+      # Checkout the repository
+      - name: Checkout code
+        uses: actions/checkout@v3
 
-    - name: Setup Node.js
-      uses: actions/setup-node@v2
-      with:
-        node-version: '14'
+      # Set up Node.js (if using a static site generator like Gatsby or Jekyll)
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '14'  # Specify the Node.js version (if applicable)
 
-    - name: Install dependencies
-      run: |
-        npm install
+      # Install dependencies (skip if not using Node.js)
+      - name: Install dependencies
+        run: |
+          npm install  # This will install packages defined in package.json if you're using a JS-based generator
 
-    - name: Build project
-      run: |
-        npm run build
+      # Build the website (this step depends on your setup)
+      - name: Build website
+        run: |
+          npm run build  # Use the command that builds your site (e.g., `gatsby build` or `hugo`)
 
-    - name: Deploy to GitHub Pages
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./dist  # Update this to your build output folder, if applicable
+      # Deploy the website to GitHub Pages
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public  # This is where your built files will go (for example, in a static site generator like Gatsby, it's ./public)
+          publish_branch: gh-pages  # The branch that will be used for the GitHub Pages site
