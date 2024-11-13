@@ -14,21 +14,21 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      # Set up Node.js (if using a static site generator like Gatsby or Jekyll)
-      - name: Set up Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: '14'  # Specify the Node.js version (if applicable)
+      # # Set up Node.js (if using a static site generator like Gatsby or Jekyll)
+      # - name: Set up Node.js
+      #   uses: actions/setup-node@v3
+      #   with:
+      #     node-version: '14'  # Specify the Node.js version (if applicable)
 
-      # Install dependencies (skip if not using Node.js)
-      - name: Install dependencies
-        run: |
-          npm install  # This will install packages defined in package.json if you're using a JS-based generator
+      # # Install dependencies (skip if not using Node.js)
+      # - name: Install dependencies
+      #   run: |
+      #     npm install  
 
-      # Build the website (this step depends on your setup)
-      - name: Build website
-        run: |
-          npm run build  # Use the command that builds your site (e.g., `gatsby build` or `hugo`)
+      # # Build the website (this step depends on your setup)
+      # - name: Build website
+      #   run: |
+      #     npm run build  
 
       # Deploy the website to GitHub Pages
       - name: Deploy to GitHub Pages
