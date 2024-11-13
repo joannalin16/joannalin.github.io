@@ -35,5 +35,6 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public  # This is where your built files will go (for example, in a static site generator like Gatsby, it's ./public)
-          publish_branch: gh-pages  # The branch that will be used for the GitHub Pages site
+          publish_dir: ./  
+          publish_branch: gh-pages  
+          force_orphan: true
