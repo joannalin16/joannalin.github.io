@@ -1,3 +1,4 @@
+import React from 'react';
 import Navbar from './NavBar';
 import museum from './images/museum.jpg';
 import coding from './images/coding.jpg';

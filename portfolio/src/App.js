@@ -3,6 +3,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './Home';
 import AboutMe from './AboutMe';
+import Contact from './Contact';
 
 // App Component
 function App() {
@@ -30,10 +31,6 @@ function Experience() {
 
 function Resume() {
   return <h2>Resume</h2>;
-}
-
-function Contact() {
-  return <h2>Contact</h2>;
 }
 
 export default App;
