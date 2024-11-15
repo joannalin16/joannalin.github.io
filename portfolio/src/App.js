@@ -1,39 +1,15 @@
 // App.js
 import React from 'react';
-import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
-
-// Navbar Component
-function Navbar() {
-  return (
-    <nav className="bg-blue-600 p-4">
-      <ul className="flex space-x-6 text-white">
-        <li>
-          <Link to="/" className="hover:text-gray-300">Home</Link>
-        </li>
-        <li>
-          <Link to="/about-me" className="hover:text-gray-300">About Me</Link>
-        </li>
-        <li>
-          <Link to="/experience" className="hover:text-gray-300">Experience</Link>
-        </li>
-        <li>
-          <Link to="/resume" className="hover:text-gray-300">Resume</Link>
-        </li>
-        <li>
-          <Link to="/contact" className="hover:text-gray-300">Contact</Link>
-        </li>
-      </ul>
-    </nav>
-  );
-}
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Home from './Home';
+import AboutMe from './AboutMe';
 
 // App Component
 function App() {
   return (
     <Router>
       <div>
-        <Navbar />
-        <div className="p-4">
+        <div className="">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about-me" element={<AboutMe />} />
@@ -47,14 +23,6 @@ function App() {
   );
 }
 
-// Page Components
-function Home() {
-  return <h2>Welcome to my Home Page</h2>;
-}
-
-function AboutMe() {
-  return <h2>About Me</h2>;
-}
 
 function Experience() {
   return <h2>Experience</h2>;
