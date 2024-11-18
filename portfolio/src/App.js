@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './Home';
 import AboutMe from './AboutMe';
 import Contact from './Contact';
+import Experience from './Experience';
 
 // App Component
 function App() {
@@ -24,10 +25,6 @@ function App() {
   );
 }
 
-
-function Experience() {
-  return <h2>Experience</h2>;
-}
 
 function Resume() {
   return <h2>Resume</h2>;
