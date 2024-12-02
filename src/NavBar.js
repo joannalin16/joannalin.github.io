@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import resume from './assets/resume.pdf';
+import logo from './images/logo4.png';
 
 // Navbar Component
 function Navbar() {
@@ -16,7 +17,7 @@ function Navbar() {
     <div className="bg-gray-100 px-8 py-6 w-full fixed top-0 z-100">
       <div className='flex flex-row justify-between'>
         <div>
-          <Link to="/" className="font-sans">logo</Link>
+          <Link to="/" className="font-sans"> <img src={logo} alt="Logo" className="h-16 w-auto" /> </Link>
         </div>
         <div className="flex flex-row space-x-6 justify-between items-center">
           <Link to="/about-me" className="hover:text-gray-300 font-sans">About Me</Link>
