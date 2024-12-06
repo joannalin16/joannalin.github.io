@@ -21,7 +21,8 @@ function Navbar() {
         </div>
         <div className="flex flex-row space-x-6 justify-between items-center">
           <Link to="/about-me" className="hover:text-gray-300 font-sans">About Me</Link>
-          <Link to="/experience" className="hover:text-gray-300 font-sans">Experience</Link>
+          {/* <Link to="/experience" className="hover:text-gray-300 font-sans">Experience</Link> */}
+          <Link to="/projects" className="hover:text-gray-300 font-sans">Projects</Link>
           {/* <Link to="/resume" className="hover:text-gray-300 font-sans">Resumé</Link> */}
           <button
             onClick={downloadResume} 

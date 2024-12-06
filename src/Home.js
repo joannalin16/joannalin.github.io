@@ -12,7 +12,7 @@ function Home() {
         <div className="flex flex-col md:flex-row items-center space-y-6 md:space-y-0 md:space-x-12">
         <div className="text-center md:text-left">
           <h1 className="text-5xl font-bold mb-6">Joanna Lin</h1>
-          <p className="text-xl text-gray-700">📚 Cornell University</p>
+          <p className="text-xl text-gray-700">📚 Cornell University, BS Computer Science</p>
           <p className="text-xl text-gray-700">💻 Software Engineer / Product Manager</p>
           <p className="text-xl text-gray-700">📍 New York, NY</p>
         </div>
