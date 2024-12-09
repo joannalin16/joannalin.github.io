@@ -27,7 +27,7 @@ const projectsData = [
     blurb: 'I identified underutilized work centers across production plants and used data analytics to prioritize the obsoletion of high priority work centers, which would increase the automotive business by over 33%.',
     description:
       'The goal of this project was to identify work centers across the Americas production plants that were underutilized and could be obsoleted to increase the automotive business by over 33%. On the product level, I conducted analysis of revenues, standard margins, and volumes across multiple automotive programs and identified key programs and products for expedited End of Life (EOL) status to prioritize focus and growth on more profitable programs and initiatives. On the commercial level, evaluated work center data to identify the impact of each work center and its likelihood of being obsoleted. I then used data analytics to prioritize the obsoletion of high priority work centers.',
-    skills: ['Microsoft Excel'],
+    skills: ['Microsoft Excel', 'SAP', 'Data Analytics'],
     gallery: [], // Replace with actual paths
   },
   {
@@ -63,9 +63,9 @@ const Projects = () => {
     return (
     <>
         <Navbar />
-        <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 text-left p-6 w-full">
-            <h1 className="text-4xl font-semibold text-center mb-12 mt-12">My Projects</h1>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 text-left p-14 w-full pt-20">
+            <h1 className="text-4xl font-semibold text-center mb-6 mt-12"></h1>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {projectsData.map((project) => (
                 <div
                 key={project.id}

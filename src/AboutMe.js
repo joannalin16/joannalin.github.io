@@ -15,7 +15,7 @@ function AboutMe() {
 
         <div className="flex flex-col lg:flex-row p-8">
         <div className="flex-1 pr-8">
-        <div className="flex flex-row gap-4 items-center pt-10"> 
+        <div className="flex flex-row gap-4 items-center pt-20"> 
             <div className="flex flex-col justify-start gap-4">
                 <img src={museum} alt="Photo 1" className="w-full h-80 object-cover rounded-md" />
                 <img src={coding} alt="Photo 2" className="w-full h-auto object-cover rounded-md" />
