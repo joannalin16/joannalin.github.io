@@ -38,8 +38,10 @@ function AboutMe() {
             business lead). 
             </p>
             <p className="text-gray-700 mb-4">
-            So far, I’ve gained experiences in software engineering as well as product management, all of which were 
-            incredibly stimulating and beneficial for my growth. (Learn more about my experiences in the Experience tab!)
+            In the summer of 2023, I interned at TE Connectivity as a Product Management Intern, which helped me explore the field 
+            of product management while working on a project that optimized business growth. In the summer of 2024, I interned at Procter & Gamble as a Software 
+            Engineer Intern where I analyzed developer data and created a UI to reflect different metrics. Both internships were
+            incredibly beneficial for my growth and allowed me to find my interest in both product management and software engineering. (Learn more about the projects I worked on in the Projects tab!)
             </p>
             <p className="text-gray-700 mb-4">
             I love learning and working with like-minded individuals who support and encourage growth. 
@@ -51,7 +53,7 @@ function AboutMe() {
             I am a big foodie and love trying new things. I also love to travel and explore new places. 
             </p>
             <p className="text-gray-700 mb-4">
-            I would love to explore any opportunities that will push me to learn something new so feel free to contact me 
+            I know I have a lot of learn so I would love to explore any opportunities that will push me to do this so feel free to contact me 
             using the Contact button above.
             </p>
         </div>
